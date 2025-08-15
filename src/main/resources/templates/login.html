@@ -6,8 +6,27 @@
     <title>Login Sistema</title>
     <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
 </head>
-<body>
-    <h1 class="text-warning">Olá, Sprint Boot</h1>
+<body class="d-flex flex-column justify-content-center align-items-center vh-100" style="background-color: #161302;">
+
+
+    <h1 class="text-white">Organizador de Tarefas</h1>
+    <div class="w-50 h-50 d-flex border border-white border-3" style="border-radius: 15px;">
+        <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+            <h3 class="text-white">Login</h3>
+            <form class="d-flex flex-column" action="" method="post">
+                <label class="mt-1 text-white" for="usuario">Usuário</label>
+                <input class="form-control h-50" style="border-radius: 10px;" type="text">
+                <label class="mt-3 text-white" for="senha">Senha</label>
+                <input class="form-control h-50" style="border-radius: 10px;" type="password">
+                <div class="d-flex justify-content-center mt-4">
+                    <input class="form-control w-50 fw-bold" style="border-radius: 15px;" type="button" value="Entrar">
+                </div>
+            </form>
+        </div>
+        <div class="col-6 h-100 d-flex justify-content-center align-items-center">
+            <img class="w-75 h-50" th:src="@{/imgs/ilustracao-plana-cenario.jpg}" alt="imagem-não-encontrada">
+        </div>
+    </div>
 
     <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
 </body>
